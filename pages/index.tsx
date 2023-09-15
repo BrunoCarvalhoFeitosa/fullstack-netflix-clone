@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css"
 const Home = () => (
   <div className="home">
     <Head>
-      <title>Netflix | Assista filmes, séries e documentários</title>
+      <title>Netflix | Assista filmes, séries e documentários em alta qualidade</title>
       <meta name="author" content="Bruno Carvalho Feitosa" />
       <meta name="description" content="Netflix, a maor plataforma de streaming de filmes e séries" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
