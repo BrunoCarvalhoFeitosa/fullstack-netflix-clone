@@ -38,10 +38,9 @@ const Profiles = () => {
                 <meta name="description" content="Netflix | Seus perfis" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
                 <link rel="icon" href="/images/fav.png" sizes="any" />
             </Head>
-            <main className="w-full h-full">
+            <main className="w-full h-[100vh]">
             <div className="fixed top-0 left-0 w-full h-[60px] p-[18px] lg:px-8 bg-black z-30">
                     <div>
                         <NetflixLogo width={120} height={25} />
@@ -76,7 +75,7 @@ const Profiles = () => {
                     </button>
                 </div>
                 <div className="flex justify-center items-center absolute bottom-0 left-[50%] translate-x-[-50%] w-[80%] xl:w-[50%] h-16 bg-[#FF0000] rounded-t-2xl text-white">
-                    <h4 className="font-['Bebas_Neue'] text-3xl uppercase">Perfil</h4>
+                    <h4 className="text-4xl uppercase font-black">Perfil</h4>
                 </div>
             </main>
         </div>

@@ -25,11 +25,11 @@ const HeaderOptions = () => {
         return () => {
           window.removeEventListener('keydown', handleEsc)
         }
-    }, [])
+    }, [closeHeaderOptions])
     
 
     return (
-        <div className={`fixed top-0 right-0 w-full h-[100vh] ease-in-out duration-700 ${headerOptionsOpen ? "translate-x-0" : "translate-x-full"} z-50`}>
+        <div className={`fixed top-0 right-0 w-full h-[100vh] ease-in-out duration-1000 ${headerOptionsOpen ? "translate-x-0" : "translate-x-full"} z-50`}>
             <div className="relative">
                 <div
                     className="w-full h-[100vh] bg-[url('/images/hero-bg.jpeg')] bg-cover bg-no-repeat"

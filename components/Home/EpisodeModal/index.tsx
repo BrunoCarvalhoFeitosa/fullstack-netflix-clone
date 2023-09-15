@@ -7,7 +7,7 @@ import YouTube from "react-youtube"
 
 const EpisodeModal = () => {
     const [isPlaying, setIsPlaying] = useState(false)
-    const playerRef = useRef(null)
+    const playerRef = useRef<any>(null)
 
     const { closeEpisodePlayerOptions, trailerLink } = useEpisodePlayer()
 
@@ -45,6 +45,7 @@ const EpisodeModal = () => {
         return () => {
             document.removeEventListener('keydown', handleSpaceKey)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const opts = {

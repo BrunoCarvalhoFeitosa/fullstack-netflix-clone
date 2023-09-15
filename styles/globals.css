@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 html {
-  @apply h-full font-["Montserrat"];
+  @apply h-full font-montserrat;
 }
 
 body {
-  @apply bg-black h-full overflow-x-hidden font-["Montserrat"];
+  @apply bg-black h-full overflow-x-hidden font-montserrat;
 }
 
 .header-icons {

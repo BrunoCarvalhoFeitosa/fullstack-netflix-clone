@@ -12,7 +12,7 @@ import EpisodeModal from "../EpisodeModal"
 import { useEpisodePlayer } from "@/contexts/EpisodePlayerContext"
 
 const Content = () => {
-    const slider = useRef()
+    const slider = useRef<Slider | null>(null)
 
     const { episodePlayerLightboxOpen } = useEpisodePlayer()
     

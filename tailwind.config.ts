@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss"
 
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,21 +11,19 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'Montserrat': ['Montserrat'],
-        'Poppins': ['Poppins'],
-        'Bebas_Neue': ['Bebas Neue'],
+        "montserrat": ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
         "3xl": "-7px -7px 10px 0 rgba(255, 255, 255, 0.04), 7px 7px 10px 0 rgba(0, 0, 0, 0.8);",
       },
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-4deg)' },
-          '50%': { transform: 'rotate(4deg)' },
+          "0%, 100%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(4deg)" },
         }
       },
       animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
+        wiggle: "wiggle 1s ease-in-out infinite",
       }
     },
     backgroundPosition: {

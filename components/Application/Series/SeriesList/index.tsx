@@ -8,8 +8,8 @@ interface SeriesListProps {
     title: string;
 }
 
-const SeriesList: React.FC<SeriesListProps> = ({ title, series }) => {
-    const slider = useRef()
+const SeriesList: React.FC<SeriesListProps> = ({ series }) => {
+    const slider = useRef<Slider | null>(null)
     
     const settings = {
         infinite: true,

@@ -8,8 +8,8 @@ interface FilmsListProps {
     title: string;
 }
 
-const FilmsList: React.FC<FilmsListProps> = ({ title, films }) => {
-    const slider = useRef()
+const FilmsList: React.FC<FilmsListProps> = ({ films }) => {
+    const slider = useRef<Slider | null>(null)
     
     const settings = {
         infinite: true,
