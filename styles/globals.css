@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply h-full font-["Montserrat"];
+}
+
+body {
+  @apply bg-black h-full overflow-x-hidden font-["Montserrat"];
+}
+
+.header-icons {
+  @apply text-lg lg:text-2xl text-white cursor-pointer;
+}
+
+video[poster] {
+  @apply w-full h-[100vh] object-cover bg-[topBg];
+}
+
+.slick-current button {
+  @apply flex;
+}
+
+.home .slick-current {
+  @apply opacity-100;
+}
+
+.home .slick-slide:not(.slick-current) {
+  @apply opacity-10;
+}
+
+.slick-slide:not(.slick-current) button {
+  @apply hidden;
+}
+
+.arrow-carousel polyline {
+  @apply stroke-zinc-400;
+}
+
+.arrow-carousel path {
+  @apply stroke-white;
+}
+
+.casting-card {
+  @apply w-[120px] md:w-[110px] lg:w-[300px] xl:w-[190px] h-[100px] lg:h-[140px] hover:scale-110 transition-all duration-300 overflow-hidden xl:overflow-auto;
+}
+
+.close path {
+  @apply stroke-white;
+}
+
+#__next {
+  @apply h-full;
+}
+
+::selection {
+  background: #333;
+}
+
+::-moz-selection {
+  background: #333;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #999;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
