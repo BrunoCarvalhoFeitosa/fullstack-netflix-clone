@@ -55,7 +55,7 @@ export const authOptions: AuthOptions = {
   pages: {
     signIn: '/sign-in'
   },
-  debug: process.env.NODE_ENV === 'development',
+  debug: process.env.NODE_ENV === 'production',
   adapter: PrismaAdapter(prismadb),
   session: { strategy: 'jwt' },
   jwt: {
