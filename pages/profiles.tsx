@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 import { NextPageContext } from "next"
 import { getSession } from "next-auth/react"
 import { useRouter } from "next/router"
@@ -42,9 +43,9 @@ const Profiles = () => {
             </Head>
             <main className="w-full h-[100vh]">
             <div className="fixed top-0 left-0 w-full h-[60px] p-[18px] lg:px-8 bg-black z-30">
-                    <div>
+                    <Link href="/">
                         <NetflixLogo width={120} height={25} />
-                    </div>
+                    </Link>
                 </div>
                 <div className="flex flex-col justify-center items-center w-[90%] lg:w-[800px] h-full mx-auto">
                     <div className="mb-10 w-[80%] md:w-[60%]">
