@@ -29,6 +29,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           emailVerified: new Date(),
         }
       })
+
+      console.log("name", name)
+      console.log("email", email)
+      console.log("password", password)
   
       return res.status(200).json(user)
     } else {
