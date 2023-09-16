@@ -3,8 +3,10 @@ import bcrypt from "bcrypt"
 import prismadb from "@/lib/prismadb"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  try {
+  console.log("req", req)
+  console.log("res", res)
 
+  try {
     if (req.method === "POST") {
       const { name, email, password } = req.body
   
