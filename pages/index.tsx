@@ -2,7 +2,9 @@ import Head from "next/head"
 import Header from "@/components/Home/Header"
 import Hero from "@/components/Home/Hero"
 import Catalogue from "@/components/Home/Catalogue"
+import Testimonials from "@/components/Home/Testimonials"
 import Prices from "@/components/Home/Prices"
+import DownloadApp from "@/components/Home/DownloadApp"
 import FloatingMenu from "@/components/Home/FloatingMenu"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -21,7 +23,10 @@ const Home = () => (
     <Header />
     <Hero />
     <Catalogue />
+    <DownloadApp />
+    <Testimonials />
     <Prices />
+    {/* <Footer /> */}
     <FloatingMenu />
   </div>
 )

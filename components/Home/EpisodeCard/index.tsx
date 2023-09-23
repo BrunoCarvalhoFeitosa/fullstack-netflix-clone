@@ -16,7 +16,7 @@ const EpisodeCard: React.FC<CatalogueProps> = ({
 
     return (
         <div>
-            <div className="relative">
+            <div className="relative cursor-grab">
                 <div className="w-full h-full">
                     <Image
                         src={cover}

@@ -5,7 +5,13 @@ import DustinImage from "@/public/images/actors/dustin.jpg"
 import ElevenImage from "@/public/images/actors/eleven.jpg"
 import MaxImage from "@/public/images/actors/max.jpg"
 import JimImage from "@/public/images/actors/jim.jpg"
-import Cover from "@/public/images/actors/dustin.jpg"
+import SteveImage from "@/public/images/actors/steve.jpg"
+import JoyceImage from "@/public/images/actors/joyce.jpg"
+import JonathanImage from "@/public/images/actors/jonathan.jpg"
+import RobinImage from "@/public/images/actors/robin.jpg"
+import LucasImage from "@/public/images/actors/lucas.jpg"
+import NancyImage from "@/public/images/actors/nancy.jpg"
+import Cover from "@/public/images/actors/eleven.jpg"
 
 export const catalogue = {
     serie: "Stranger Things",
@@ -29,37 +35,75 @@ export const catalogue = {
           actorRealName: "Finn Wolfhard",
           actorSubName: "Mike Wheeler",
           actorPicture: MikeImage,
-          actorEpisodes: "33 episódios"
+          actorEpisodes: "42 episódios"
         },
         {
           actorRealName: "Sadie Sink",
-          actorSubName: "Max",
+          actorSubName: "Max Mayfield",
           actorPicture: MaxImage,
-          actorEpisodes: "32 episódios"
+          actorEpisodes: "28 episódios"
         },
         {
           actorRealName: "Gaten Matarazzo",
-          actorSubName: "Dustin",
+          actorSubName: "Dustin Henderson",
           actorPicture: DustinImage,
-          actorEpisodes: "34 episódios"
+          actorEpisodes: "42 episódios"
         },
         {
           actorRealName: "Millie Bobby Brown",
           actorSubName: "Eleven",
           actorPicture: ElevenImage,
-          actorEpisodes: "31 episódios"
+          actorEpisodes: "41 episódios"
         },
         {
           actorRealName: "Noah Schnapp",
           actorSubName: "Will Byers",
           actorPicture: WillByersImage,
-          actorEpisodes: "29 episódios"
+          actorEpisodes: "41 episódios"
         },
         {
           actorRealName: "David Harbour",
           actorSubName: "Jim Hopper",
           actorPicture: JimImage,
-          actorEpisodes: "27 episódios"
+          actorEpisodes: "42 episódios"
+        },
+    ],
+    subActors: [
+        {
+          actorRealName: "Joe Keery",
+          actorSubName: "Steve Harrington",
+          actorPicture: SteveImage,
+          actorEpisodes: "42 episódios"
+        },
+        {
+          actorRealName: "Winona Ryder",
+          actorSubName: "Joyce Byers",
+          actorPicture: JoyceImage,
+          actorEpisodes: "42 episódios"
+        },
+        {
+          actorRealName: "Charlie Heaton",
+          actorSubName: "Jonathan Byers",
+          actorPicture: JonathanImage,
+          actorEpisodes: "42 episódios"
+        },
+        {
+          actorRealName: "Maya Hawke",
+          actorSubName: "Robin Buckley",
+          actorPicture: RobinImage,
+          actorEpisodes: "25 episódios"
+        },
+        {
+          actorRealName: "Caleb McLaughlin",
+          actorSubName: "Lucas Sinclair",
+          actorPicture: LucasImage,
+          actorEpisodes: "42 episódios"
+        },
+        {
+          actorRealName: "Natalia Dyer",
+          actorSubName: "Nancy Wheeler",
+          actorPicture: NancyImage,
+          actorEpisodes: "42 episódios"
         },
     ],
     season: [
@@ -164,11 +208,7 @@ export const pricing = [
       },
       {
         icon: <BsCheck />,
-        name: "Assista em 8K",
-      },
-      {
-        icon: <BsCheck />,
-        name: "Assista off-line",
+        name: "Assista em 8K e OFF-LINE",
       },
       {
         icon: <BsCheck />,
@@ -217,4 +257,37 @@ export const numbers = [
     subtitle: "vitórias",
     number: "107"
   },
+]
+
+export const testimonials = [
+  {
+    title: "Extrema qualidade",
+    description: "Posso assistir às minhas séries em qualquer dispositivo, com a mesma qualidade de aúdio e vídeo. A navegação e o sistema de busca são muito eficientes, sempre encontrei o que procurava.",
+    userName: "@mariah",
+    date: "10/02/2022"
+  },
+  {
+    title: "Muito bom",
+    description: "Me surpreendi com a variedade de filmes e séries que a plataforma possui. Todo filme que está em catálogo nos cinemas já está presente na plataforma.",
+    userName: "@gabriel_dias",
+    date: "27/05/2022"
+  },
+  {
+    title: "O mais completo",
+    description: "A cada ano que passa, vejo que a fidelidade da plataforma só melhora. A qualidade da imagem é extramamente boa, as produções das séries da Netflix também são muito boas.",
+    userName: "@liah_nunes",
+    date: "17/09/2023"
+  },
+  {
+    title: "Nada a reclamar",
+    description: "Comprei o plano mais completo, minha família toda tem acesso através de qualquer tipo de dispositivo, a qualidade da imagem e áudio sempre impressionaram positivamente.",
+    userName: "@ana_alves",
+    date: "04/07/2022"
+  },
+  {
+    title: "Assisto indo ao trabalho",
+    description: "Meu trabalho fica longe da minha casa, durante todo o trajeto eu venho assistindo minhas séries através do meu celular, por assistir com fones, o áudio é de extrema qualidade e é imersível",
+    userName: "@diego_antunes",
+    date: "10/10/2022"
+  }
 ]

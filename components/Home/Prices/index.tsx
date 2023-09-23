@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { pricing } from "@/data/home"
 
 const Prices = () => {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState<number>(0)
 
   return (
     <section className="bg-black lg:py-2 lg:px-12">
@@ -25,7 +25,7 @@ const Prices = () => {
           {pricing.map(({ title, price, list, buttonIcon, buttonText }, currentIndex) => (
             <div
               key={currentIndex}
-              className="bg-white w-full lg:max-w-[388px] border h-full relative cursor-pointer"
+              className="bg-white w-full flex-1 border h-full relative cursor-pointer"
               data-aos="fade-up"
               data-aos-delay="700"
               onClick={() => setIndex(currentIndex)}

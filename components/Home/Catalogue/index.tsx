@@ -8,7 +8,7 @@ import { NetflixLogo } from "@/public/svgs/NetflixLogo"
 import { BsStarFill } from "react-icons/bs"
 import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr"
 import EpisodeCard from "@/components/Home/EpisodeCard"
-import EpisodeModal from "../EpisodeModal"
+import EpisodeModal from "@/components/Home/EpisodeModal"
 import { useEpisodePlayer } from "@/contexts/EpisodePlayerContext"
 
 const Content = () => {
@@ -23,7 +23,7 @@ const Content = () => {
         dots: false,
         centerMode: true,
         centerPadding: "70px",
-        speed: 600,
+        speed: 1200,
         infinite: true,
         autoplaySpeed: 4000,
         autoplay: true,
@@ -153,8 +153,35 @@ const Content = () => {
                 </div>
             </div>
             <div className="w-[100%] mt-14 lg:mt-28">
-                <div className="flex justify-center xl:justify-between items-center flex-wrap gap-1 lg:gap-6 [&>*:nth-child(even)]:xl:translate-y-[80px] [&>*:nth-child(odd)]:animate-wiggle opacity-50">
+                <div className="flex justify-center xl:justify-between items-center flex-wrap gap-1 lg:gap-6 [&>*:nth-child(even)]:xl:translate-y-[80px] [&>*:nth-child(odd)]:animate-wiggle opacity-60">
                     {catalogue.actors.map((actor, index) => (
+                        <div key={index}>
+                            <div className="casting-card cursor-pointer">
+                                <Image
+                                    src={actor.actorPicture}
+                                    alt={actor.actorSubName}
+                                    width={200}
+                                    height={100}
+                                    className="w-full h-full object-cover object-center"
+                                />
+                            </div>
+                            <div className="flex flex-col items-end mt-[10px] pr-2">
+                                <div>
+                                    <h5 className="m-0 text-sm font-bold text-white">
+                                        {actor.actorSubName}
+                                    </h5>
+                                </div>
+                                <div>
+                                    <strong className="text-sm font-normal text-zinc-600">
+                                        {actor.actorEpisodes}
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div className="flex justify-center xl:justify-between items-center flex-wrap gap-1 pt-6 lg:gap-6 [&>*:nth-child(even)]:xl:translate-y-[80px] [&>*:nth-child(odd)]:animate-wiggle opacity-60">
+                    {catalogue.subActors.map((actor, index) => (
                         <div key={index}>
                             <div className="casting-card cursor-pointer">
                                 <Image

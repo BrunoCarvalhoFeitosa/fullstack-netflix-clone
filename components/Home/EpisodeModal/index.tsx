@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from "react"
+import YouTube from "react-youtube"
 import { GrClose } from "react-icons/gr"
 import { GoScreenFull } from "react-icons/go"
 import { HiOutlinePause, HiOutlinePlay } from "react-icons/hi2"
 import { useEpisodePlayer } from "@/contexts/EpisodePlayerContext"
-import YouTube from "react-youtube"
 
 const EpisodeModal = () => {
     const [isPlaying, setIsPlaying] = useState(false)

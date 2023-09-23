@@ -15,7 +15,7 @@ const SeriesList: React.FC<SeriesListProps> = ({ series }) => {
         infinite: true,
         autoplay: true,
         speed: 500,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 7000,
         slidesToShow: 4,
         slidesToScroll: 1,
         pauseOnHover: true,
