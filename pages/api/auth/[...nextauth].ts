@@ -31,7 +31,7 @@ export const authOptions: AuthOptions = {
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
-          throw new Error("Email and password required");
+          throw new Error("Email and password required")
         }
 
         const user = await prismadb.user.findUnique({ where: {
@@ -39,13 +39,13 @@ export const authOptions: AuthOptions = {
         }});
 
         if (!user || !user.hashedPassword) {
-          throw new Error("Email does not exist");
+          throw new Error("Email does not exist")
         }
 
         const isCorrectPassword = await compare(credentials.password, user.hashedPassword);
 
         if (!isCorrectPassword) {
-          throw new Error("Incorrect password");
+          throw new Error("Incorrect password")
         }
 
         return user;
@@ -63,4 +63,4 @@ export const authOptions: AuthOptions = {
   secret: process.env.NEXTAUTH_SECRET
 };
 
-export default NextAuth(authOptions);
+export default NextAuth(authOptions)
