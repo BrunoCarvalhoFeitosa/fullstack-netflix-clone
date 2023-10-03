@@ -52,7 +52,7 @@ const SignUp = () => {
         setIsSubmitted(true)
 
         try {
-            await axios.post("https://fullstack-netflix-app.vercel.app/api/register", {
+            await axios.post("/api/register", {
                 name: data.user_completeName,
                 email: data.user_email,
                 password: data.user_password,
