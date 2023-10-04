@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(405).end()
     }
 
-    await serverAuth(req, res)
+    await serverAuth(req)
 
     const billboardsCount = await prismadb.billboard.count()
     const randomIndex = Math.floor(Math.random() * billboardsCount)

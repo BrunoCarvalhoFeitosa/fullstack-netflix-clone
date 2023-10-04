@@ -208,26 +208,10 @@ const SignIn = () => {
                                     </button>
                                 )}
                             </div>
-                            <div className="flex justify-center items-center gap-x-4 my-4 mx-auto w-[70%]">
+                            <div className="flex justify-center items-center gap-x-4 my-6 mx-auto w-[70%]">
                                 <div className="flex-1 h-[1px] bg-zinc-600" />
                                 <p className="text-sm text-zinc-400">ou</p>
                                 <div className="flex-1 h-[1px] bg-zinc-600" />
-                            </div>
-                            <div className="flex justify-center items-center gap-x-2">
-                                <button
-                                    type="button"
-                                    className="flex justify-center items-center w-[30px] h-[30px] bg-red-600 rounded-full cursor-pointer"
-                                    onClick={() => signIn('google', { callbackUrl: "/profiles" })}
-                                >
-                                    <AiOutlineGoogle className="text-black" />
-                                </button>
-                                <button
-                                    type="button"
-                                    className="flex justify-center items-center w-[30px] h-[30px] bg-red-600 rounded-full cursor-pointer"
-                                    onClick={() => signIn('github', { callbackUrl: "/profiles" })}
-                                >
-                                    <AiOutlineGithub className="text-black" />
-                                </button>
                             </div>
                             <div className="mt-5">
                                 <div className="flex justify-center items-center gap-x-1 mt-4">

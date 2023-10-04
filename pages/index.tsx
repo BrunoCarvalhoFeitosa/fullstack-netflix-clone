@@ -16,8 +16,6 @@ const Home = () => (
       <title>Netflix | Assista filmes, séries e documentários em alta qualidade</title>
       <meta name="author" content="Bruno Carvalho Feitosa" />
       <meta name="description" content="Netflix, a maor plataforma de streaming de filmes e séries" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link rel="icon" href="/images/fav.png" sizes="any" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />

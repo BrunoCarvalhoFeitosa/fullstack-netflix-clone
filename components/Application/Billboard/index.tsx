@@ -1,11 +1,18 @@
 import { useState } from "react"
 import useBillboard from "@/hooks/useBillboard"
+import { useTraillerModal } from "@/contexts/TraillerModalContext"
 import { DataFilmsAndMoviesType } from "@/@types/typings"
 import { BsPlay, BsStarFill, BsPlus } from "react-icons/bs"
 
 const Billboard = () => {
     const [play, setPlay] = useState<boolean>(false)
     const { data: film }: { data: DataFilmsAndMoviesType } = useBillboard()
+    const { setTraillerData, openTraillerModal } = useTraillerModal()
+    
+    const handleSelect = () => {
+        openTraillerModal()
+        setTraillerData(film)
+    }
 
     return (
         <div className="relative h-[100vh]">
@@ -54,7 +61,10 @@ const Billboard = () => {
                         <div className="flex items-center gap-x-2">
                             <button
                                 className="animate-pulse hover:animate-none flex items-center py-2 px-6 rounded-[42px] bg-[#FF0000]"
-                                onClick={() => setPlay(!play)}
+                                onClick={() => {
+                                    setPlay(!play)
+                                    handleSelect()
+                                }}
                             >
                                 <div className="text-3xl text-white">
                                     <BsPlay />
@@ -64,15 +74,14 @@ const Billboard = () => {
                                 </div>
                             </button>
                             <button className="group flex justify-center items-center py-2 px-6 md:px-12 rounded-[42px] border border-white bg-transparent hover:bg-white transition-all duration-700">
-                                <div className="text-3xl text-white group-hover:text-black">
+                                <div className="text-3xl text-white outline-none group-hover:text-black">
                                     <BsPlus />
                                 </div>
-                                <div className="text-md font-semibold text-white group-hover:text-black">
+                                <div className="text-md font-semibold text-white outline-none group-hover:text-black">
                                     Favoritar
                                 </div>
                             </button>
                         </div>
-                        <div></div>
                     </div>
                 </div>
             </div>

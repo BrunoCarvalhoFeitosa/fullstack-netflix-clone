@@ -8,7 +8,6 @@ import { useTraillerModal } from "@/contexts/TraillerModalContext"
 const TraillerModal = () => {
     const [isPlaying, setIsPlaying] = useState(false)
     const playerRef = useRef<any>(null)
-
     const { closeTraillerModal, traillerData } = useTraillerModal()
 
     const handleFullscreen = () => {
