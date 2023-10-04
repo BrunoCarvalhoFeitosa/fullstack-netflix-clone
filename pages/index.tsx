@@ -5,6 +5,7 @@ import Catalogue from "@/components/Home/Catalogue"
 import Testimonials from "@/components/Home/Testimonials"
 import Prices from "@/components/Home/Prices"
 import DownloadApp from "@/components/Home/DownloadApp"
+import Footer from "@/components/Home/Footer"
 import FloatingMenu from "@/components/Home/FloatingMenu"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -26,7 +27,7 @@ const Home = () => (
     <DownloadApp />
     <Testimonials />
     <Prices />
-    {/* <Footer /> */}
+    <Footer />
     <FloatingMenu />
   </div>
 )
