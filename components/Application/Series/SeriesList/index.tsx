@@ -55,7 +55,10 @@ const SeriesList: React.FC<SeriesListProps> = ({ series }) => {
                     className="flex justify-between gap-x-2"
                 >
                     {series && series.map((serie, index) => (
-                        <SerieCard key={index} serie={serie} />
+                        <SerieCard
+                            key={index}
+                            serie={serie}
+                        />
                     ))}
                 </Slider>
             </div>

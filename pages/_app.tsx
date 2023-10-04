@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
 import { HeaderProvider } from '@/contexts/HeaderContext'
 import { EpisodePlayerProvider } from '@/contexts/EpisodePlayerContext'
+import { TraillerModalProvider } from '@/contexts/TraillerModalContext'
 import '@/styles/globals.css'
 
 const montserrat = Montserrat({
@@ -30,9 +31,11 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <HeaderProvider>
       <EpisodePlayerProvider>
-        <main className={`${montserrat.className}`}>
-          <Component {...pageProps} />
-        </main>
+        <TraillerModalProvider>
+          <main className={montserrat.className}>
+            <Component {...pageProps} />
+          </main>
+        </TraillerModalProvider>
       </EpisodePlayerProvider>
     </HeaderProvider>
   )

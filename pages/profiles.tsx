@@ -37,8 +37,6 @@ const Profiles = () => {
                 <title>Netflix | Escolha seu perfil para acessar a plataforma</title>
                 <meta name="author" content="Bruno Carvalho Feitosa" />
                 <meta name="description" content="Netflix | Seus perfis" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link rel="icon" href="/images/fav.png" sizes="any" />
             </Head>
             <main className="w-full h-[100vh]">
@@ -69,8 +67,9 @@ const Profiles = () => {
                                     {user?.name}
                                 </h2>
                             </div>
-                            <div className="flex items-center gap-x-2 text-sm text-white">
-                                <HiOutlineLockOpen className="text-3xl text-white" />
+                            <div className="flex items-center gap-x-2 mt-4 text-sm text-white">
+                                <HiOutlineLockOpen className="text-xl text-white" />
+                                <p className="text-sm text-white">Acessar</p>
                             </div>
                         </div>
                     </button>

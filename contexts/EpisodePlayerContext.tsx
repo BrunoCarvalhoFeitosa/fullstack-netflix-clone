@@ -1,11 +1,11 @@
 import React, { createContext, useState, useContext, ReactNode } from "react"
 
 type EpisodePlayerContextType = {
-    episodePlayerLightboxOpen: boolean;
-    openEpisodePlayerOptions: () => void;
-    closeEpisodePlayerOptions: () => void;
-    trailerLink: string;
-    setTrailerLink: (link: string) => void;
+  episodePlayerLightboxOpen: boolean;
+  openEpisodePlayerOptions: () => void;
+  closeEpisodePlayerOptions: () => void;
+  trailerLink: string;
+  setTrailerLink: (link: string) => void;
 }
 
 const EpisodePlayerContext = createContext<EpisodePlayerContextType | undefined>(undefined)

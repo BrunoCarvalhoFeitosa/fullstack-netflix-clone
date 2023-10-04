@@ -215,12 +215,14 @@ const SignIn = () => {
                             </div>
                             <div className="flex justify-center items-center gap-x-2">
                                 <button
+                                    type="button"
                                     className="flex justify-center items-center w-[30px] h-[30px] bg-red-600 rounded-full cursor-pointer"
                                     onClick={() => signIn('google', { callbackUrl: "/profiles" })}
                                 >
                                     <AiOutlineGoogle className="text-black" />
                                 </button>
                                 <button
+                                    type="button"
                                     className="flex justify-center items-center w-[30px] h-[30px] bg-red-600 rounded-full cursor-pointer"
                                     onClick={() => signIn('github', { callbackUrl: "/profiles" })}
                                 >

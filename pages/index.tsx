@@ -19,6 +19,9 @@ const Home = () => (
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link rel="icon" href="/images/fav.png" sizes="any" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
       <script src="https://www.youtube.com/iframe_api" async />
     </Head>
     <Header />

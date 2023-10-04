@@ -9,8 +9,10 @@ import HeaderOptions from "@/components/Application/HeaderOptions"
 import Billboard from "@/components/Application/Billboard"
 import FilmsList from "@/components/Application/Films/FilmsList"
 import SeriesList from "@/components/Application/Series/SeriesList"
+import TraillerModal from "@/components/Application/TraillerModal"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { useTraillerModal } from "@/contexts/TraillerModalContext"
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context)
@@ -33,6 +35,7 @@ const Application = () => {
   const { data } = useCurrentUser()
   const { data: films = [] } = useFilmsList()
   const { data: series = [] } = useSeriesList()
+  const { traillerModalIsOpen } = useTraillerModal()
 
   return (
     <div className="application">
@@ -50,6 +53,7 @@ const Application = () => {
         <Billboard />
         <SeriesList title="Seriados" series={series} />
         <FilmsList title="Filmes" films={films} />
+        {traillerModalIsOpen && <TraillerModal />}
       </main>
     </div>
   )

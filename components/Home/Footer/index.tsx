@@ -1,3 +1,4 @@
+import Link from "next/link"
 import {
     footerFirstItem,
     footerSecondItem,
@@ -46,6 +47,23 @@ const Footer = () => (
                         </li>
                     ))}
                 </ul>
+            </div>
+        </div>
+        <div className="pt-12">
+            <div className="flex justify-center items-center gap-x-1 text-sm text-center text-white">
+                <div>
+                    Desenvolvido por
+                </div>
+                <div>
+                    <Link
+                        className="author"
+                        href="https://br.linkedin.com/in/bruno-carvalho-feitosa"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Bruno Carvalho Feitosa
+                    </Link>
+                </div>
             </div>
         </div>
     </footer>

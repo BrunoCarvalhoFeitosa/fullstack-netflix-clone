@@ -1,14 +1,22 @@
 import Image from "next/image"
 import { DataFilmsInterface } from "@/@types/typings"
 import { BsStarFill } from "react-icons/bs"
+import { useTraillerModal } from "@/contexts/TraillerModalContext"
 
 interface SerieCardProps {
     serie: DataFilmsInterface;
 }
 
 const SerieCard: React.FC<SerieCardProps> = ({ serie }) => {
+    const { setTraillerData, openTraillerModal } = useTraillerModal()
+    
+    const handleSelect = () => {
+        openTraillerModal()
+        setTraillerData(serie)
+    }
+
     return (
-        <div className="group">
+        <div className="group" onClick={handleSelect}>
             <div className="overflow-hidden cursor-grab">
                 <Image
                     src={serie?.thumbnailUrl}

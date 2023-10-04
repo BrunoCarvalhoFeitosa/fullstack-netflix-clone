@@ -1,14 +1,22 @@
 import Image from "next/image"
 import { DataFilmsInterface } from "@/@types/typings"
 import { BsStarFill } from "react-icons/bs"
+import { useTraillerModal } from "@/contexts/TraillerModalContext"
 
 interface FilmCardProps {
     film: DataFilmsInterface;
 }
 
 const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
+    const { setTraillerData, openTraillerModal } = useTraillerModal()
+    
+    const handleSelect = () => {
+        openTraillerModal()
+        setTraillerData(film)
+    }
+
     return (
-        <div className="group">
+        <div className="group" onClick={handleSelect}>
             <div className="relative overflow-hidden cursor-grab">
                 <Image
                     src={film?.thumbnailUrl}
