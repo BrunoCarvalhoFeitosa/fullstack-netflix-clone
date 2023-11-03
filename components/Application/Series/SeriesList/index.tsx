@@ -4,8 +4,8 @@ import SerieCard from "@/components/Application/Series/SerieCard"
 import { DataFilmsInterface } from "@/@types/typings"
 
 interface SeriesListProps {
-    series: DataFilmsInterface[];
-    title: string;
+    series: DataFilmsInterface[]
+    title: string
 }
 
 const SeriesList: React.FC<SeriesListProps> = ({ series }) => {

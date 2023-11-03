@@ -1,17 +1,17 @@
 import React, { createContext, useState, useContext, ReactNode } from "react"
 
 type EpisodePlayerContextType = {
-  episodePlayerLightboxOpen: boolean;
-  openEpisodePlayerOptions: () => void;
-  closeEpisodePlayerOptions: () => void;
-  trailerLink: string;
-  setTrailerLink: (link: string) => void;
+  episodePlayerLightboxOpen: boolean
+  openEpisodePlayerOptions: () => void
+  closeEpisodePlayerOptions: () => void
+  trailerLink: string
+  setTrailerLink: (link: string) => void
 }
 
 const EpisodePlayerContext = createContext<EpisodePlayerContextType | undefined>(undefined)
 
 type EpisodePlayerContextProviderProps = {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export const EpisodePlayerProvider: React.FC<EpisodePlayerContextProviderProps> = ({ children }) => {
@@ -45,7 +45,7 @@ export const useEpisodePlayer = (): EpisodePlayerContextType => {
   const context = useContext(EpisodePlayerContext)
 
   if (!context) {
-    throw new Error('useEpisodePlayer must be used within EpisodePlayerProvider')
+    throw new Error("useEpisodePlayer must be used within EpisodePlayerProvider")
   }
 
   return context

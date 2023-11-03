@@ -4,7 +4,7 @@ import { BsStarFill } from "react-icons/bs"
 import { useTraillerModal } from "@/contexts/TraillerModalContext"
 
 interface SerieCardProps {
-    serie: DataFilmsInterface;
+    serie: DataFilmsInterface
 }
 
 const SerieCard: React.FC<SerieCardProps> = ({ serie }) => {

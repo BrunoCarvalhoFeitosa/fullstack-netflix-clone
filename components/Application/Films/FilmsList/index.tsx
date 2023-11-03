@@ -4,8 +4,8 @@ import FilmCard from "@/components/Application/Films/FilmCard"
 import { DataFilmsInterface } from "@/@types/typings"
 
 interface FilmsListProps {
-    films: DataFilmsInterface[];
-    title: string;
+    films: DataFilmsInterface[]
+    title: string
 }
 
 const FilmsList: React.FC<FilmsListProps> = ({ films }) => {

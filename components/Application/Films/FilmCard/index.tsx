@@ -4,7 +4,7 @@ import { BsStarFill } from "react-icons/bs"
 import { useTraillerModal } from "@/contexts/TraillerModalContext"
 
 interface FilmCardProps {
-    film: DataFilmsInterface;
+    film: DataFilmsInterface
 }
 
 const FilmCard: React.FC<FilmCardProps> = ({ film }) => {

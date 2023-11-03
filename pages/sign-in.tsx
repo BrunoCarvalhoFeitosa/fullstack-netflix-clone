@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form"
 import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { ToastContainer, toast } from "react-toastify"
-import { AiOutlineGoogle, AiOutlineGithub, AiFillEye, AiFillEyeInvisible } from "react-icons/ai"
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"
 import { NetflixLogo } from "@/public/svgs/NetflixLogo"
 import "react-toastify/dist/ReactToastify.css"
 
@@ -61,7 +61,7 @@ const SignIn = () => {
         setIsSubmitted(true)
         
         try {
-            await signIn('credentials', {
+            await signIn("credentials", {
                 email: data.user_email,
                 password: data.user_password,
                 redirect: true,

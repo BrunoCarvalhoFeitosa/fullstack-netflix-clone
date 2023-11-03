@@ -1,11 +1,11 @@
 const Hero = () => {
     const scrollToContent = () => {
-        const content = document.querySelector('#catalogue')
+        const content = document.querySelector("#catalogue")
 
         if (content) {
             content.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+                behavior: "smooth",
+                block: "start"
             })
         }
     }

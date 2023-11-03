@@ -33,24 +33,24 @@ const EpisodeModal = () => {
     }
 
     const handleSpaceKey = (e: any) => {
-        if (e.code === 'Space') {
+        if (e.code === "Space") {
             e.preventDefault()
             handlePlayPause()
         }
     }
 
     useEffect(() => {
-        document.addEventListener('keydown', handleSpaceKey)
+        document.addEventListener("keydown", handleSpaceKey)
 
         return () => {
-            document.removeEventListener('keydown', handleSpaceKey)
+            document.removeEventListener("keydown", handleSpaceKey)
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const opts = {
-        height: '500',
-        width: '100%',
+        height: "500",
+        width: "100%",
         playerVars: {
             autoplay: 0,
             controls: 0,

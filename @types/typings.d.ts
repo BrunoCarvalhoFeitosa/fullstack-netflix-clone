@@ -1,30 +1,30 @@
 export interface DataUserProps {
-    created_at: Date;
-    email: string;
-    emailVerified: Date;
-    favoritesIds: Array<string>;
-    hashedPassword: string;
-    id: string;
-    image: string;
-    name: string;
-    updated_at: Date;
+    created_at: Date
+    email: string
+    emailVerified: Date
+    favoritesIds: Array<string>
+    hashedPassword: string
+    id: string
+    image: string
+    name: string
+    updated_at: Date
 }
 
 export type DataUserType = {
-    created_at: Date;
-    email: string;
-    emailVerified: Date;
-    favoritesIds: Array<string>;
-    hashedPassword: string;
-    id: string;
-    image: string;
-    name: string;
-    updated_at: Date;
+    created_at: Date
+    email: string
+    emailVerified: Date
+    favoritesIds: Array<string>
+    hashedPassword: string
+    id: string
+    image: string
+    name: string
+    updated_at: Date
 }
 
 export interface DataFilmsInterface {
-    id: string;
-    title: string;
+    id: string
+    title: string
     description: string
     genre: string
     thumbnailUrl: string
@@ -36,18 +36,18 @@ export interface DataFilmsInterface {
 }
 
 export interface CatalogueProps {
-    cover: any;
-    title: string;
+    cover: any
+    title: string
     description: string
-    resume: string;
-    duration: string;
-    trailerLink: string;
-    season: number;
+    resume: string
+    duration: string
+    trailerLink: string
+    season: number
 }
 
 export type DataFilmsAndMoviesType = {
-    id: string;
-    title: string;
+    id: string
+    title: string
     description: string
     genre: string
     thumbnailUrl: string

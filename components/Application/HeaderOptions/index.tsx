@@ -15,15 +15,15 @@ const HeaderOptions = () => {
 
     useEffect(() => {
         const handleEsc = (event: any) => {
-           if (event.key === 'Escape') {
+           if (event.key === "Escape") {
                 closeHeaderOptions()
                 document.body.style.overflowY="auto"
            }
         }
-        window.addEventListener('keydown', handleEsc)
+        window.addEventListener("keydown", handleEsc)
     
         return () => {
-          window.removeEventListener('keydown', handleEsc)
+          window.removeEventListener("keydown", handleEsc)
         }
     }, [closeHeaderOptions])
     

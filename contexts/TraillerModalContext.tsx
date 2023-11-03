@@ -1,18 +1,17 @@
 import React, { createContext, useState, useContext, ReactNode } from "react"
-import { DataFilmsInterface } from "@/@types/typings"
 
 type TraillerModalContextType = {
-    traillerModalIsOpen: boolean;
-    openTraillerModal: () => void;
-    closeTraillerModal: () => void;
-    traillerData: any;
-    setTraillerData: (data: any) => void;
+    traillerModalIsOpen: boolean
+    openTraillerModal: () => void
+    closeTraillerModal: () => void
+    traillerData: any
+    setTraillerData: (data: any) => void
 }
 
 const TraillerModalContext = createContext<TraillerModalContextType | undefined>(undefined)
 
 type TraillerModalContextProviderProps = {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export const TraillerModalProvider: React.FC<TraillerModalContextProviderProps> = ({ children }) => {

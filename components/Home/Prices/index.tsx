@@ -32,8 +32,8 @@ const Prices = () => {
             >
               <div className={`
                 ${index === currentIndex
-                  ? 'bg-[#FF0000] text-white'
-                  : 'bg-[#000] text-white text-heading'
+                  ? "bg-[#FF0000] text-white"
+                  : "bg-[#000] text-white text-heading"
                 } text-center py-[20px] border-b border-stroke-3 transition
               `}>
                 <div className="text-[17px] font-medium">
